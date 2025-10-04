@@ -3,7 +3,7 @@ import time
 import os
 
 if os.getenv("MOCK_MODE") == "1":
-    from test.mock_serial import MockSerial as Serial
+    from mock_serial import MockSerial as Serial
 else:
     import serial
     Serial = serial.Serial
